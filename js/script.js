@@ -45,5 +45,17 @@ createApp({
             ],
             activeIndex: 0,
         }
+    },
+    methods: {
+        // mi servirà una funzione per andare indietro nello slider : devo decrementare activeIndex
+        previoustImg : function(){
+
+        },
+         // mi servirà una funzione per andare avanti nello slider : devo aumentare activeIndex
+        nextImg :function(){
+
+        },
+
+
     }
 }).mount('#app')
