@@ -10,4 +10,7 @@
 }
 .fa-solid{
     cursor: pointer;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    padding: 3px 8px;
 }

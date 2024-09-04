@@ -19,11 +19,15 @@
             <!-- il mio slider -->
             <div class="row justify-content-around">
                 <div class="col-8 mt-4 position-relative">
-                    <div class="card d-flex">
+                    <div class="card text-white">
                         <i class="fa-solid fa-arrow-up text-danger fs-2 position-absolute top-0 end-0"
                         @click="previousImg()"></i>
                         <!-- le immagini del mio slider -->
                         <img :src="imageList[activeIndex].image" alt="..." class="card-img-top custom-card-image">
+                        <!-- titolo immagine -->
+                        <h4 class="position-absolute">{{imageList[activeIndex].title}}</h4>
+                        <!-- descrizione immagine -->
+                        <p class="position-absolute bottom-0">{{imageList[activeIndex].text}} </p>
                         <i class="fa-solid fa-arrow-down text-danger fs-2 position-absolute bottom-0 end-0"
                         @click="nextImg()"></i>
                     </div>

@@ -3,7 +3,8 @@ console.log('Js ok');
 
 /**
  * Descrizione:
-Partendo dal markup della versione svolta in js plain, rifare lo slider ma questa volta usando Vue e l'array di oggetti allegato.
+Partendo dal markup della versione svolta in js plain, rifare lo slider ma questa volta usando Vue e
+l'array di oggetti allegato.
 Quando mostriamo un'immagine, mostriamo anche il relativo titolo e la relativa descrizione.
 Bonus:
 0 - realizziamo ora anche le thumbnails!
@@ -56,7 +57,7 @@ createApp({
             }
         },
          // mi servirà una funzione per andare avanti nello slider : devo aumentare activeIndex
-        nextImg :function(){
+        nextImg : function(){
             if(this.activeIndex === this.imageList.length-1){
                 this.activeIndex = 0;
             } else {
