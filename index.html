@@ -24,10 +24,12 @@
                         @click="previousImg()"></i>
                         <!-- le immagini del mio slider -->
                         <img :src="imageList[activeIndex].image" alt="..." class="card-img-top custom-card-image">
-                        <!-- titolo immagine -->
-                        <h4 class="title-image">{{imageList[activeIndex].title}}</h4>
-                        <!-- descrizione immagine -->
-                        <p class="text-image">{{imageList[activeIndex].text}} </p>
+                         <div class="description-img text-center position-absolute bottom-0">
+                            <!-- titolo immagine -->
+                            <h4>{{imageList[activeIndex].title}}</h4>
+                            <!-- descrizione immagine -->
+                            <p>{{imageList[activeIndex].text}} </p>
+                         </div>
                         <i class="fa-solid fa-arrow-down text-danger fs-2 position-absolute bottom-0 end-0"
                         @click="nextImg()"></i>
                     </div>
