@@ -25,9 +25,9 @@
                         <!-- le immagini del mio slider -->
                         <img :src="imageList[activeIndex].image" alt="..." class="card-img-top custom-card-image">
                         <!-- titolo immagine -->
-                        <h4 class="position-absolute">{{imageList[activeIndex].title}}</h4>
+                        <h4 class="title-image">{{imageList[activeIndex].title}}</h4>
                         <!-- descrizione immagine -->
-                        <p class="position-absolute bottom-0">{{imageList[activeIndex].text}} </p>
+                        <p class="text-image">{{imageList[activeIndex].text}} </p>
                         <i class="fa-solid fa-arrow-down text-danger fs-2 position-absolute bottom-0 end-0"
                         @click="nextImg()"></i>
                     </div>
