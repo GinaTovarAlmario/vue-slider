@@ -48,12 +48,20 @@ createApp({
     },
     methods: {
         // mi servirà una funzione per andare indietro nello slider : devo decrementare activeIndex
-        previoustImg : function(){
-
+        previousImg : function(){
+            if(this.activeIndex === 0){
+                this.activeIndex = this.imageList.length-1;
+            } else {
+                this.activeIndex--;
+            }
         },
          // mi servirà una funzione per andare avanti nello slider : devo aumentare activeIndex
         nextImg :function(){
-
+            if(this.activeIndex === this.imageList.length-1){
+                this.activeIndex = 0;
+            } else {
+                this.activeIndex++;
+            }
         },
     },
     created(){
