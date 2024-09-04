@@ -55,5 +55,8 @@ createApp({
         nextImg :function(){
 
         },
+    },
+    created(){
+        console.log('Applicazione creata');
     }
 }).mount('#app')
