@@ -55,7 +55,5 @@ createApp({
         nextImg :function(){
 
         },
-
-
     }
 }).mount('#app')
